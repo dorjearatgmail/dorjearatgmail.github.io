@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure AI Foundry Workshop Proposal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%); /* Blue gradient */
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #00c6ff, #0072ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .sidebar {
+            scrollbar-width: thin;
+        }
+        .highlight-number {
+            font-size: 3rem; /* Extra large font size */
+            font-weight: bold;
+            background: linear-gradient(45deg, #ff00cc, #3333ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: block;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <div class="flex h-screen overflow-hidden">
+        <!-- Sidebar -->
+        <div class="w-64 bg-white border-r border-gray-200 sidebar overflow-y-auto">
+            <div class="p-4">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Workshop Agenda</h2>
+                <ul class="space-y-2">
+                    <li><a href="#part1" class="block px-3 py-2 rounded hover:bg-blue-50 text-blue-600">Part 1: Introduction</a></li>
+                    <li><a href="#part2" class="block px-3 py-2 rounded hover:bg-blue-50 text-blue-600">Part 2: Hands-On Setup</a></li>
+                    <li><a href="#part3" class="block px-3 py-2 rounded hover:bg-blue-50 text-blue-600">Part 3: Customizing Agents</a></li>
+                    <li><a href="#part4" class="block px-3 py-2 rounded hover:bg-blue-50 text-blue-600">Part 4: Advanced Scenarios</a></li>
+                    <li><a href="#part5" class="block px-3 py-2 rounded hover:bg-blue-50 text-blue-600">Part 5: Wrap-up</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 overflow-y-auto">
+            <!-- Banner -->
+            <div class="gradient-bg text-white p-6 shadow-md sticky top-0 z-50">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h1 class="text-4xl font-bold mb-2">Azure AI Foundry Workshop</h1>
+                        <p class="text-xl opacity-90">3-Hour Intensive Training for AI Engineers</p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <img src="imgs/azure-ai-foundry-logo.svg" alt="Azure AI Foundry Logo" class="h-16 w-16">
+                        <img src="imgs/ai_agent_icon.png" alt="AI Agent Icon" class="h-16 w-16 rounded-full bg-white p-2 shadow-md">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Sections -->
+            <div class="p-8 space-y-12">
+                <section id="part1" class="bg-white rounded-xl shadow-sm p-6">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                        <span class="highlight-number mr-3">1</span>
+                        Introduction & Foundations
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-700 mb-2">Learning Outcomes</h3>
+                            <ul class="list-disc pl-5 space-y-1 text-gray-600">
+                                <li>Understand what Azure AI Foundry is and what AI agents are</li>
+                                <li>Review agent capabilities, architecture, and real-world use-cases</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-700 mb-2">Activities</h3>
+                            <ul class="list-disc pl-5 space-y-1 text-gray-600">
+                                <li>Quick poll: What problems do agents solve in your workplace?</li>
+                                <li>Short video/demo: Building an AI Agent Using Azure AI Foundry</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Additional sections for Parts 2-5 would follow the same pattern -->
+                <section id="part2" class="bg-white rounded-xl shadow-sm p-6">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                        <span class="highlight-number mr-3">2</span>
+                        Hands-On Setup & First Agent Build
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-700 mb-2">Learning Outcomes</h3>
+                            <ul class="list-disc pl-5 space-y-1 text-gray-600">
+                                <li>Set up your Azure AI Foundry environment</li>
+                                <li>Build your first agent using the Azure portal</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-700 mb-2">Activities</h3>
+                            <ul class="list-disc pl-5 space-y-1 text-gray-600">
+                                <li>Guided hands-on exercise: Log in to Azure portal</li>
+                                <li>Create project and build basic question-answering agent</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="part3" class="bg-white rounded-xl shadow-sm p-6">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                        <span class="highlight-number mr-3">3</span>
+                        Customizing & Integrating Agents
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-700 mb-2">Learning Outcomes</h3>
+                            <ul class="list-disc pl-5 space-y-1 text-gray-600">
+                                <li>Upload files and documents for agent knowledge base</li>
+                            <li>Connect to Azure AI Search for enhanced document retrieval</li>
+                            <li>Add custom actions and workflows to extend agent capabilities</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-700 mb-2">Activities</h3>
+                            <ul class="list-disc pl-5 space-y-1 text-gray-600">
+                                <li>Code lab: Build a code-first agent</li>
+                                <li>Enhance agent with plugins/tools</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="part4" class="bg-white rounded-xl shadow-sm p-6">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                        <span class="highlight-number mr-3">4</span>
+                        Advanced Scenarios & Q&A
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-700 mb-2">Learning Outcomes</h3>
+                            <ul class="list-disc pl-5 space-y-1 text-gray-600">
+                                <li>Understand enterprise features and monitoring</li>
+                                <li>Explore advanced uses like RAG and image generation</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-700 mb-2">Activities</h3>
+                            <ul class="list-disc pl-5 space-y-1 text-gray-600">
+                                <li>Demo of monitoring/tracing dashboard</li>
+                                <li>Live Q&A session</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="part5" class="bg-white rounded-xl shadow-sm p-6">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
+                        <span class="highlight-number mr-3">5</span>
+                        Wrap-up & Takeaways
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-700 mb-2">Resources</h3>
+                            <ul class="list-disc pl-5 space-y-1 text-gray-600">
+                                <li>Microsoft Learn modules</li>
+                                <li>GitHub labs and workshop guides</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-700 mb-2">Completion</h3>
+                            <ul class="list-disc pl-5 space-y-1 text-gray-600">
+                                <li>Feedback survey</li>
+                                <li>Certificates of completion</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Footer -->
+            <footer class="bg-gray-100 border-t border-gray-200 py-6 px-8 text-center text-gray-600">
+                <p>Workshop Proposal © 2023 | Created by @TonyKing</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
