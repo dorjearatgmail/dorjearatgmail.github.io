@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --color-primary-start: #EC4899; /* Pink-500 */
+  --color-primary-end: #A855F7;   /* Fuchsia-600 */
+  --color-secondary-start: #FACC15; /* Yellow-400 */
+  --color-secondary-end: #F97316;   /* Orange-500 */
+  --color-accent-start: #2DD4BF;   /* Teal-400 */
+  --color-accent-end: #06B6D4;     /* Cyan-500 */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scroll due to animations */
+}
+
+/* Scroll animation styles */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Specific animation delays */
+.animate-on-scroll:nth-child(1) { transition-delay: 0s; }
+.animate-on-scroll:nth-child(2) { transition-delay: 0.1s; }
+.animate-on-scroll:nth-child(3) { transition-delay: 0.2s; }
+.animate-on-scroll:nth-child(4) { transition-delay: 0.3s; }
+.animate-on-scroll:nth-child(5) { transition-delay: 0.4s; }
+/* Add more as needed for deeper nesting or more elements */
+
+/* Custom gradient classes */
+.bg-gradient-primary {
+  background-image: linear-gradient(to right, var(--color-primary-start), var(--color-primary-end));
+}
+.bg-gradient-secondary {
+  background-image: linear-gradient(to right, var(--color-secondary-start), var(--color-secondary-end));
+}
+.bg-gradient-accent {
+  background-image: linear-gradient(to right, var(--color-accent-start), var(--color-accent-end));
+}

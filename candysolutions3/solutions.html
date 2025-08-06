@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Solutions - Solutions</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-800">
+    <!-- Navigation Bar -->
+    <header class="bg-white shadow-md fixed w-full z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold bg-gradient-primary text-transparent bg-clip-text">Candy Solutions</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-pink-600 transition-colors duration-300">Home</a>
+                <a href="solutions.html" class="text-pink-600 font-semibold">Solutions</a>
+                <a href="about.html" class="text-gray-600 hover:text-pink-600 transition-colors duration-300">About Us</a>
+                <a href="contact.html" class="text-gray-600 hover:text-pink-600 transition-colors duration-300">Contact</a>
+            </div>
+            <!-- Hamburger Menu for Mobile -->
+            <button id="hamburger-button" class="md:hidden text-gray-600 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden flex-col items-center py-4 bg-white shadow-lg">
+            <a href="index.html" class="block py-2 text-gray-600 hover:text-pink-600 transition-colors duration-300">Home</a>
+            <a href="solutions.html" class="block py-2 text-pink-600 font-semibold">Solutions</a>
+            <a href="about.html" class="block py-2 text-gray-600 hover:text-pink-600 transition-colors duration-300">About Us</a>
+            <a href="contact.html" class="block py-2 text-gray-600 hover:text-pink-600 transition-colors duration-300">Contact</a>
+        </div>
+    </header>
+
+    <main class="pt-24">
+        <!-- Solutions Introduction -->
+        <section class="py-16 bg-gradient-to-r from-purple-100 to-pink-100">
+            <div class="container mx-auto px-6 text-center max-w-3xl animate-on-scroll">
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-6 bg-gradient-primary text-transparent bg-clip-text">Tailored Solutions for Your Growth</h1>
+                <p class="text-lg md:text-xl leading-relaxed text-gray-700">
+                    For your various needs, Candy Solutions offers four core service areas, tailored to help you thrive.
+                </p>
+            </div>
+        </section>
+
+        <!-- Service Areas Details -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <!-- AI & Digital Transformation -->
+                <div class="flex flex-col md:flex-row items-center gap-12 mb-20 animate-on-scroll">
+                    <div class="md:w-1/2">
+                        <img src="images/ai-digital-transformation.png" alt="AI & Digital Transformation" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                    </div>
+                    <div class="md:w-1/2 text-center md:text-left">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-primary text-transparent bg-clip-text">AI & Digital Transformation</h2>
+                        <p class="text-lg leading-relaxed text-gray-700">
+                            Our "AI & Digital" services empower businesses to transform and innovate using artificial intelligence and digital technologies: AI strategy, machine learning, automation, cloud computing, and data analytics for smarter, more efficient enterprises.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Finance & Lending Expertise -->
+                <div class="flex flex-col md:flex-row-reverse items-center gap-12 mb-20 animate-on-scroll">
+                    <div class="md:w-1/2">
+                        <img src="images/finance-lending.png" alt="Finance & Lending Expertise" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                    </div>
+                    <div class="md:w-1/2 text-center md:text-right">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-secondary text-transparent bg-clip-text">Finance & Lending Expertise</h2>
+                        <p class="text-lg leading-relaxed text-gray-700">
+                            Flexible lending and expert financial consulting for SMEs and individuals to seize opportunities and ensure steady growth.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Skills Enhancement Programs -->
+                <div class="flex flex-col md:flex-row items-center gap-12 mb-20 animate-on-scroll">
+                    <div class="md:w-1/2">
+                        <img src="images/skills-enhancement.png" alt="Skills Enhancement Programs" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                    </div>
+                    <div class="md:w-1/2 text-center md:text-left">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-accent text-transparent bg-clip-text">Skills Enhancement Programs</h2>
+                        <p class="text-lg leading-relaxed text-gray-700">
+                            Practical workshops and career development programs to elevate your skills and help you achieve your ambitions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Holistic Health & Wealth Planning -->
+                <div class="flex flex-col md:flex-row-reverse items-center gap-12 animate-on-scroll">
+                    <div class="md:w-1/2">
+                        <img src="images/health-wealth.png" alt="Holistic Health & Wealth Planning" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                    </div>
+                    <div class="md:w-1/2 text-center md:text-right">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4 bg-gradient-primary text-transparent bg-clip-text">Holistic Health & Wealth Planning</h2>
+                        <p class="text-lg leading-relaxed text-gray-700">
+                            Wellness and wealth planning programs—personalized coaching for a healthier, happier, and more prosperous life.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 @Candy Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

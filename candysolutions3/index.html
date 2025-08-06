@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Solutions - Home</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-800">
+    <!-- Navigation Bar -->
+    <header class="bg-white shadow-md fixed w-full z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold bg-gradient-primary text-transparent bg-clip-text">Candy Solutions</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-pink-600 transition-colors duration-300">Home</a>
+                <a href="solutions.html" class="text-gray-600 hover:text-pink-600 transition-colors duration-300">Solutions</a>
+                <a href="about.html" class="text-gray-600 hover:text-pink-600 transition-colors duration-300">About Us</a>
+                <a href="contact.html" class="text-gray-600 hover:text-pink-600 transition-colors duration-300">Contact</a>
+            </div>
+            <!-- Hamburger Menu for Mobile -->
+            <button id="hamburger-button" class="md:hidden text-gray-600 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden flex-col items-center py-4 bg-white shadow-lg">
+            <a href="index.html" class="block py-2 text-gray-600 hover:text-pink-600 transition-colors duration-300">Home</a>
+            <a href="solutions.html" class="block py-2 text-gray-600 hover:text-pink-600 transition-colors duration-300">Solutions</a>
+            <a href="about.html" class="block py-2 text-gray-600 hover:text-pink-600 transition-colors duration-300">About Us</a>
+            <a href="contact.html" class="block py-2 text-gray-600 hover:text-pink-600 transition-colors duration-300">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Banner -->
+        <section class="relative h-screen flex items-center justify-center text-center overflow-hidden pt-16">
+            <img src="images/hero-background.png" alt="Vibrant candy colors background" class="absolute inset-0 w-full h-full object-cover z-0">
+            <div class="absolute inset-0 bg-black opacity-50 z-10"></div>
+            <div class="relative z-20 text-white p-8 animate-on-scroll">
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-4 drop-shadow-lg">
+                    Fulfilling your needs as sweetly as candy
+                </h1>
+                <p class="text-lg md:text-xl max-w-2xl mx-auto opacity-90">
+                    Your one-stop destination for holistic support across AI & Digital transformation, finance, skills development, and health & wealth.
+                </p>
+            </div>
+        </section>
+
+        <!-- Business Modules -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center mb-12 bg-gradient-primary text-transparent bg-clip-text animate-on-scroll">Our Core Solutions</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- AI & Digital -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform duration-300 animate-on-scroll">
+                        <div class="text-6xl text-pink-500 mb-4"><i class="fas fa-robot"></i></div>
+                        <h3 class="text-2xl font-semibold mb-3">AI & Digital</h3>
+                        <p class="text-gray-600">Transform and innovate with cutting-edge AI and digital technologies.</p>
+                    </div>
+                    <!-- Finance & Lending -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform duration-300 animate-on-scroll">
+                        <div class="text-6xl text-yellow-500 mb-4"><i class="fas fa-sack-dollar"></i></div>
+                        <h3 class="text-2xl font-semibold mb-3">Finance & Lending</h3>
+                        <p class="text-gray-600">Flexible solutions and expert advice for steady growth and seizing opportunities.</p>
+                    </div>
+                    <!-- Skills Enhancement -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform duration-300 animate-on-scroll">
+                        <div class="text-6xl text-teal-500 mb-4"><i class="fas fa-lightbulb"></i></div>
+                        <h3 class="text-2xl font-semibold mb-3">Skills Enhancement</h3>
+                        <p class="text-gray-600">Practical workshops and programs to elevate your capabilities and achieve ambitions.</p>
+                    </div>
+                    <!-- Health & Wealth -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform duration-300 animate-on-scroll">
+                        <div class="text-6xl text-purple-500 mb-4"><i class="fas fa-heart"></i></div>
+                        <h3 class="text-2xl font-semibold mb-3">Health & Wealth</h3>
+                        <p class="text-gray-600">Personalized coaching for a healthier, happier, and more prosperous life.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Welcome Paragraph -->
+        <section class="py-16 bg-gradient-to-r from-pink-100 to-purple-100">
+            <div class="container mx-auto px-6 text-center max-w-3xl animate-on-scroll">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">Welcome to Candy Solutions</h2>
+                <p class="text-lg md:text-xl leading-relaxed text-gray-700">
+                    Candy Solutions is your one-stop destination for holistic support across AI & Digital transformation, finance, skills development, and health & wealth. Whether you're a business owner or an individual passionate about self-improvement, we sweetly fulfill your unique needs.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 @Candy Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

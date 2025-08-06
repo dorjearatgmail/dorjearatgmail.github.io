@@ -41,9 +41,9 @@
             <a href="index.html" class="text-2xl font-bold text-gray-900">Candy Solutions</a>
             <div class="hidden md:flex space-x-6">
                 <a href="index.html" class="text-gray-600 hover:text-gray-900">Home</a>
-                <div class="relative group">
-                    <button class="text-gray-600 hover:text-gray-900 focus:outline-none">Solutions <i class="fas fa-chevron-down text-xs"></i></button>
-                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-48">
+                <div class="relative">
+                    <button id="solutions-dropdown-button" class="text-gray-600 hover:text-gray-900 focus:outline-none">Solutions <i class="fas fa-chevron-down text-xs"></i></button>
+                    <div id="solutions-dropdown-menu" class="absolute hidden z-50 bg-white shadow-lg rounded-md py-2 w-48">
                         <a href="solutions-ai-digital.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">AI & Digital</a>
                         <a href="solutions-finance-lending.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Finance & Lending</a>
                         <a href="solutions-skills-enhancement.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Skills Enhancement</a>
@@ -196,6 +196,19 @@
     </footer>
 
     <script>
+        // Desktop Solutions dropdown toggle
+        const solutionsButton = document.getElementById('solutions-dropdown-button');
+        const solutionsMenu = document.getElementById('solutions-dropdown-menu');
+        
+        solutionsButton.addEventListener('click', function(e) {
+            e.stopPropagation();
+            solutionsMenu.classList.toggle('hidden');
+        });
+        
+        document.addEventListener('click', function() {
+            solutionsMenu.classList.add('hidden');
+        });
+        
         // Mobile menu toggle
         document.getElementById('mobile-menu-button').addEventListener('click', function() {
             var mobileMenu = document.getElementById('mobile-menu');
