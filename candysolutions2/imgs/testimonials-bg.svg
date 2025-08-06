@@ -1,0 +1,24 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0093E9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80D0C7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Rectangle -->
+  <rect width="800" height="400" fill="url(#grad1)" />
+  
+  <!-- Decorative Elements -->
+  <circle cx="50" cy="50" r="30" fill="rgba(255,255,255,0.1)" />
+  <circle cx="750" cy="350" r="40" fill="rgba(255,255,255,0.1)" />
+  
+  <!-- Quote Marks -->
+  <text x="100" y="100" font-family="Arial" font-size="120" fill="rgba(255,255,255,0.1)" font-weight="bold">"</text>
+  <text x="650" y="300" font-family="Arial" font-size="120" fill="rgba(255,255,255,0.1)" font-weight="bold">"</text>
+  
+  <!-- Abstract Wave -->
+  <path d="M0,200 Q200,150 400,200 T800,200" stroke="rgba(255,255,255,0.2)" stroke-width="3" fill="none" />
+  <path d="M0,220 Q200,170 400,220 T800,220" stroke="rgba(255,255,255,0.15)" stroke-width="2" fill="none" />
+</svg>
