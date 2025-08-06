@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies - Liquid Mash</title>
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Framer Motion CDN (for animations) -->
+    <script src="https://cdn.jsdelivr.net/npm/framer-motion@latest/dist/framer-motion.min.js"></script>
+    <style>
+        /* Custom styles for high-saturation colors and gradients */
+        .bg-gradient-purple-blue {
+            background: linear-gradient(to right, #6B46C1, #4299E1);
+        }
+        .text-gradient-purple-blue {
+            background: linear-gradient(to right, #6B46C1, #4299E1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-gradient-pink-orange {
+            background: linear-gradient(to right, #ED64A6, #F6AD55);
+        }
+        .text-gradient-pink-orange {
+            background: linear-gradient(to right, #ED64A6, #F6AD55);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-gradient-green-teal {
+            background: linear-gradient(to right, #38B2AC, #48BB78);
+        }
+        .text-gradient-green-teal {
+            background: linear-gradient(to right, #38B2AC, #48BB78);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Example of a high-contrast, high-saturation color combination */
+        .bg-vibrant-blue {
+            background-color: #007BFF;
+        }
+        .text-vibrant-yellow {
+            color: #FFD700;
+        }
+        .bg-dark-purple {
+            background-color: #4B0082;
+        }
+        .text-light-green {
+            color: #90EE90;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans leading-normal tracking-normal">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-800 p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-white">Liquid Mash</a>
+            <!-- Hamburger Button (Mobile) -->
+            <button id="menu-toggle" class="md:hidden text-gray-300 hover:text-white focus:outline-none text-2xl" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- Menu Links -->
+            <div id="menu-links" class="space-y-2 mt-4 md:mt-0 md:space-y-0 md:space-x-4 md:flex md:items-center hidden md:block">
+                <a href="index.html" class="block md:inline text-gray-300 hover:text-white">Home</a>
+                <a href="about.html" class="block md:inline text-gray-300 hover:text-white">About</a>
+                <a href="services.html" class="block md:inline text-gray-300 hover:text-white">Services</a>
+                <a href="case-studies.html" class="block md:inline text-gray-300 hover:text-white">Case Studies</a>
+                <a href="connect.html" class="block md:inline text-gray-300 hover:text-white">Connect</a>
+                <a href="privacy-policy.html" class="block md:inline text-gray-300 hover:text-white">Privacy Policy</a>
+                <a href="terms.html" class="block md:inline text-gray-300 hover:text-white">Terms & Conditions</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-96 flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('imgs/hero-background-casestudies.jpg');">
+        <div class="absolute inset-0 bg-black opacity-70"></div>
+        <div class="relative z-10 p-8 max-w-4xl mx-auto">
+            <h1 class="text-6xl md:text-8xl font-extrabold text-white mb-4 leading-tight">
+                Our <span class="text-gradient-purple-blue">Case Studies</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8">
+                Explore our success stories and see the impact of AI.
+            </p>
+        </div>
+    </header>
+
+    <!-- Case Studies Content -->
+    <section class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-extrabold text-center text-white mb-12">
+                Success Stories Across <span class="text-gradient-green-teal">Industries</span>
+            </h2>
+            <p class="text-center text-gray-300 text-lg mb-16 max-w-3xl mx-auto">
+                At Liquid Mash, we pride ourselves on delivering tangible results and transformative solutions. Our case studies showcase how our AI expertise has helped businesses across various sectors achieve their goals and overcome complex challenges.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Retail -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-xl transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-3xl font-bold text-white mb-4">Retail</h3>
+                    <p class="text-gray-300 text-lg mb-4">
+                        <strong>Challenge:</strong> A major retail chain struggled with inventory management and personalised customer experiences.
+                    </p>
+                    <p class="text-gray-300 text-lg mb-4">
+                        <strong>Solution:</strong> We implemented an AI-driven demand forecasting system and a personalised recommendation engine.
+                    </p>
+                    <p class="text-gray-300 text-lg">
+                        <strong>Result:</strong> 15% reduction in excess inventory and a 20% increase in customer engagement and sales conversions.
+                    </p>
+                </div>
+
+                <!-- Financial Services -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-xl transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-3xl font-bold text-white mb-4">Financial Services</h3>
+                    <p class="text-gray-300 text-lg mb-4">
+                        <strong>Challenge:</strong> A leading bank faced increasing fraud attempts and inefficient risk assessment processes.
+                    </p>
+                    <p class="text-gray-300 text-lg mb-4">
+                        <strong>Solution:</strong> Developed an AI-powered fraud detection system and an automated credit risk assessment model.
+                    </p>
+                    <p class="text-gray-300 text-lg">
+                        <strong>Result:</strong> 30% decrease in fraudulent transactions and a 40% faster loan approval process.
+                    </p>
+                </div>
+
+                <!-- E-commerce -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-xl transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-3xl font-bold text-white mb-4">E-commerce</h3>
+                    <p class="text-gray-300 text-lg mb-4">
+                        <strong>Challenge:</strong> An online marketplace needed to improve customer retention and optimise product search.
+                    </p>
+                    <p class="text-gray-300 text-lg mb-4">
+                        <strong>Solution:</strong> Implemented an AI-driven customer churn prediction model and an intelligent search algorithm.
+                    </p>
+                    <p class="text-gray-300 text-lg">
+                        <strong>Result:</strong> 10% improvement in customer retention and a significant increase in search accuracy and conversion rates.
+                    </p>
+                </div>
+
+                <!-- Manufacturing -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-xl transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-3xl font-bold text-white mb-4">Manufacturing</h3>
+                    <p class="text-gray-300 text-lg mb-4">
+                        <strong>Challenge:</strong> A large manufacturing plant experienced frequent equipment breakdowns and high maintenance costs.
+                    </p>
+                    <p class="text-gray-300 text-lg mb-4">
+                        <strong>Solution:</strong> Deployed an AI-powered predictive maintenance system.
+                    </p>
+                    <p class="text-gray-300 text-lg">
+                        <strong>Result:</strong> 25% reduction in unplanned downtime and a 18% decrease in maintenance expenses.
+                    </p>
+                </div>
+
+                <!-- Energy -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-xl transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-3xl font-bold text-white mb-4">Energy</h3>
+                    <p class="text-gray-300 text-lg mb-4">
+                        <strong>Challenge:</strong> An energy provider sought to optimise energy consumption and predict grid fluctuations.
+                    </p>
+                    <p class="text-gray-300 text-lg mb-4">
+                        <strong>Solution:</strong> Developed an AI-driven energy demand forecasting and smart grid management system.
+                    </p>
+                    <p class="text-gray-300 text-lg">
+                        <strong>Result:</strong> 12% improvement in energy efficiency and enhanced grid stability.
+                    </p>
+                </div>
+
+                <!-- Telecommunications -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-xl transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-3xl font-bold text-white mb-4">Telecommunications</h3>
+                    <p class="text-gray-300 text-lg mb-4">
+                        <strong>Challenge:</strong> A telecom company struggled with network optimisation and customer churn.
+                    </p>
+                    <p class="text-gray-300 text-lg mb-4">
+                        <strong>Solution:</strong> Implemented an AI-powered network performance optimisation tool and a churn prediction model.
+                    </p>
+                    <p class="text-gray-300 text-lg">
+                        <strong>Result:</strong> 10% improvement in network efficiency and a significant reduction in customer churn rate.
+                    </p>
+                </div>
+
+                <!-- Healthcare -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-xl transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-3xl font-bold text-white mb-4">Healthcare</h3>
+                    <p class="text-gray-300 text-lg mb-4">
+                        <strong>Challenge:</strong> A hospital system needed to improve patient care pathways and operational efficiency.
+                    </p>
+                    <p class="text-gray-300 text-lg mb-4">
+                        <strong>Solution:</strong> Developed an AI-assisted diagnostic support system and an optimised patient flow management solution.
+                    </p>
+                    <p class="text-gray-300 text-lg">
+                        <strong>Result:</strong> Enhanced diagnostic accuracy and a 20% improvement in patient throughput.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-20 bg-gradient-pink-orange text-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-6">
+                Ready to create your own success story?
+            </h2>
+            <p class="text-xl md:text-2xl mb-8">
+                Partner with Liquid Mash and transform your business with AI.
+            </p>
+            <a href="connect.html" class="bg-white text-pink-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-200 transition duration-300">
+                Get a Consultation <i class="fas fa-handshake ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-10 text-gray-400 text-center">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-white text-xl font-bold mb-2">Liquid Mash</h3>
+                    <p>© Copyright 2024 | All Rights Reserved Liquid Mash 2024</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="index.html" class="hover:text-white">Home</a>
+                    <a href="about.html" class="hover:text-white">About</a>
+                    <a href="services.html" class="hover:text-white">Services</a>
+                    <a href="case-studies.html" class="hover:text-white">Case Studies</a>
+                    <a href="connect.html" class="hover:text-white">Connect</a>
+                </div>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin text-2xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter text-2xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook text-2xl"></i></a>
+                </div>
+            </div>
+            <p class="text-sm">Created by @TonyKing</p>
+        </div>
+    </footer>
+
+    <script>
+        // Framer Motion-like scroll animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('section, .grid > div').forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(50px)';
+                section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+                observer.observe(section);
+            });
+        });
+    </script>
+    <script>
+        // Hamburger menu toggle
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.getElementById('menu-toggle');
+            const menuLinks = document.getElementById('menu-links');
+            menuToggle.addEventListener('click', function () {
+                menuLinks.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

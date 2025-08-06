@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Liquid Mash</title>
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Framer Motion CDN (for animations) -->
+    <script src="https://cdn.jsdelivr.net/npm/framer-motion@latest/dist/framer-motion.min.js"></script>
+    <style>
+        /* Custom styles for high-saturation colors and gradients */
+        .bg-gradient-purple-blue {
+            background: linear-gradient(to right, #6B46C1, #4299E1);
+        }
+        .text-gradient-purple-blue {
+            background: linear-gradient(to right, #6B46C1, #4299E1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-gradient-pink-orange {
+            background: linear-gradient(to right, #ED64A6, #F6AD55);
+        }
+        .text-gradient-pink-orange {
+            background: linear-gradient(to right, #ED64A6, #F6AD55);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-gradient-green-teal {
+            background: linear-gradient(to right, #38B2AC, #48BB78);
+        }
+        .text-gradient-green-teal {
+            background: linear-gradient(to right, #38B2AC, #48BB78);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Example of a high-contrast, high-saturation color combination */
+        .bg-vibrant-blue {
+            background-color: #007BFF;
+        }
+        .text-vibrant-yellow {
+            color: #FFD700;
+        }
+        .bg-dark-purple {
+            background-color: #4B0082;
+        }
+        .text-light-green {
+            color: #90EE90;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans leading-normal tracking-normal">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-800 p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-white">Liquid Mash</a>
+            <!-- Hamburger Button (Mobile) -->
+            <button id="menu-toggle" class="md:hidden text-gray-300 hover:text-white focus:outline-none text-2xl" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- Menu Links -->
+            <div id="menu-links" class="space-y-2 mt-4 md:mt-0 md:space-y-0 md:space-x-4 md:flex md:items-center hidden md:block">
+                <a href="index.html" class="block md:inline text-gray-300 hover:text-white">Home</a>
+                <a href="about.html" class="block md:inline text-gray-300 hover:text-white">About</a>
+                <a href="services.html" class="block md:inline text-gray-300 hover:text-white">Services</a>
+                <a href="case-studies.html" class="block md:inline text-gray-300 hover:text-white">Case Studies</a>
+                <a href="connect.html" class="block md:inline text-gray-300 hover:text-white">Connect</a>
+                <a href="privacy-policy.html" class="block md:inline text-gray-300 hover:text-white">Privacy Policy</a>
+                <a href="terms.html" class="block md:inline text-gray-300 hover:text-white">Terms & Conditions</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-96 flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('imgs/aboutpage.png');">
+        <div class="absolute inset-0 bg-black opacity-70"></div>
+        <div class="relative z-10 p-8 max-w-4xl mx-auto">
+            <h1 class="text-6xl md:text-8xl font-extrabold text-white mb-4 leading-tight">
+                <span class="text-gradient-purple-blue">About Us</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8">
+                Learn more about Liquid Mash and our mission.
+            </p>
+        </div>
+    </header>
+
+    <!-- About Us Content -->
+    <section class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-5xl font-extrabold text-center text-white mb-12">
+                Our <span class="text-gradient-green-teal">Story</span>
+            </h2>
+            <div class="max-w-4xl mx-auto text-gray-300 text-lg leading-relaxed">
+                <p class="mb-6">Liquid Mash was founded with a singular vision: to empower businesses with the transformative potential of Artificial Intelligence. In an era where data is abundant and technology evolves at an unprecedented pace, we saw an opportunity to bridge the gap between complex AI concepts and practical, impactful business solutions. Our journey began with a small team of passionate AI researchers, data scientists, and business strategists who believed that AI should not be a luxury for a few, but an accessible tool for all.</p>
+                <p class="mb-6">From our humble beginnings, we have grown into a leading AI consultancy, serving a diverse range of industries and helping organisations of all sizes navigate their digital transformation. Our success is built on a foundation of relentless innovation, deep technical expertise, and an unwavering commitment to our clients' success. We pride ourselves on not just delivering cutting-edge AI models, but on crafting holistic strategies that integrate seamlessly into existing workflows, driving tangible results and sustainable growth.</p>
+                <p class="mb-6">Today, Liquid Mash stands as a beacon of AI excellence, continuously pushing the boundaries of what's possible. We are more than just a service provider; we are a partner in innovation, dedicated to helping our clients unlock new efficiencies, discover new insights, and achieve unprecedented levels of performance. Our story is one of passion, perseverance, and a profound belief in the power of AI to shape a better future.</p>
+            </div>
+
+            <h2 class="text-5xl font-extrabold text-center text-white mt-20 mb-12">
+                Our <span class="text-gradient-pink-orange">Mission</span>
+            </h2>
+            <div class="max-w-4xl mx-auto text-gray-300 text-lg leading-relaxed">
+                <p class="mb-6">Our mission at Liquid Mash is to democratise Artificial Intelligence, making its power accessible and actionable for businesses worldwide. We are committed to delivering innovative, ethical, and impactful AI solutions that drive significant value, foster sustainable growth, and empower our clients to thrive in an increasingly data-driven world.</p>
+                <p class="mb-6">We believe in a future where AI serves as a catalyst for human potential, automating mundane tasks, augmenting decision-making, and unlocking creative possibilities. Our approach is rooted in collaboration, transparency, and a deep understanding of our clients' unique challenges and aspirations. We strive to build long-lasting partnerships, guiding organisations through every step of their AI journey, from initial strategy to successful implementation and continuous optimisation.</p>
+                <p class="mb-6">Ultimately, our mission is to transform businesses by harnessing the intelligence of machines, enabling them to achieve unprecedented levels of efficiency, insight, and competitive advantage, all while upholding the highest standards of responsibility and integrity.</p>
+            </div>
+
+            <h2 class="text-5xl font-extrabold text-center text-white mt-20 mb-12">
+                Our <span class="text-gradient-purple-blue">Approach</span>
+            </h2>
+            <div class="max-w-4xl mx-auto text-gray-300 text-lg leading-relaxed">
+                <p class="mb-6">At Liquid Mash, our approach to AI integration is holistic and client-centric. We don't just offer off-the-shelf solutions; we craft bespoke strategies tailored to your specific business needs, challenges, and objectives. Our process is designed to be collaborative, transparent, and results-driven, ensuring that every AI solution we implement delivers measurable value.</p>
+                <p class="mb-6">We begin with a comprehensive discovery phase, immersing ourselves in your operations to understand your unique data landscape, existing infrastructure, and strategic goals. This allows us to identify the most impactful opportunities for AI application and develop a clear roadmap for implementation. Our team of experts then designs, develops, and deploys cutting-edge AI models, leveraging the latest advancements in machine learning, natural language processing, and computer vision.</p>
+                <p class="mb-6">Crucially, our approach extends beyond deployment. We provide ongoing support, monitoring, and optimisation to ensure that your AI systems continue to perform at their peak and adapt to evolving business requirements. We also prioritise knowledge transfer, empowering your internal teams with the skills and understanding necessary to manage and leverage AI effectively. With Liquid Mash, you gain a partner dedicated to your long-term success, committed to transforming your business through intelligent innovation.</p>
+            </div>
+
+            <h2 class="text-5xl font-extrabold text-center text-white mt-20 mb-12">
+                Why <span class="text-gradient-green-teal">Choose Us?</span>
+            </h2>
+            <div class="max-w-4xl mx-auto text-gray-300 text-lg leading-relaxed">
+                <ul class="list-disc list-inside space-y-4">
+                    <li><strong>Expertise:</strong> Our team comprises leading AI researchers, data scientists, and industry veterans with a proven track record of delivering successful AI solutions across diverse sectors.</li>
+                    <li><strong>Innovation:</strong> We are at the forefront of AI innovation, constantly exploring new technologies and methodologies to provide you with cutting-edge solutions that give you a competitive edge.</li>
+                    <li><strong>Customisation:</strong> We understand that every business is unique. Our solutions are not one-size-fits-all; they are meticulously tailored to your specific challenges and objectives.</li>
+                    <li><strong>Results-Driven:</strong> Our focus is on delivering tangible, measurable results. We work closely with you to define success metrics and ensure our AI solutions contribute directly to your bottom line.</li>
+                    <li><strong>Ethical AI:</strong> We are committed to responsible AI development and deployment, ensuring fairness, transparency, and accountability in all our solutions.</li>
+                    <li><strong>Partnership:</strong> We believe in building long-term partnerships. From strategy to implementation and ongoing support, we are with you every step of the way, acting as an extension of your team.</li>
+                </ul>
+            </div>
+
+            <div class="text-center mt-20">
+                <a href="connect.html" class="bg-gradient-pink-orange text-white px-8 py-4 rounded-full text-lg font-semibold hover:opacity-90 transition duration-300">
+                    Connect with Us <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-10 text-gray-400 text-center">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-white text-xl font-bold mb-2">Liquid Mash</h3>
+                    <p>© Copyright 2024 | All Rights Reserved Liquid Mash 2024</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="index.html" class="hover:text-white">Home</a>
+                    <a href="about.html" class="hover:text-white">About</a>
+                    <a href="services.html" class="hover:text-white">Services</a>
+                    <a href="case-studies.html" class="hover:text-white">Case Studies</a>
+                    <a href="connect.html" class="hover:text-white">Connect</a>
+                </div>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin text-2xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter text-2xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook text-2xl"></i></a>
+                </div>
+            </div>
+            <p class="text-sm">Created by @TonyKing</p>
+        </div>
+    </footer>
+
+    <script>
+        // Framer Motion-like scroll animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('section, .grid > div').forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(50px)';
+                section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+                observer.observe(section);
+            });
+        });
+    </script>
+    <script>
+        // Hamburger menu toggle
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.getElementById('menu-toggle');
+            const menuLinks = document.getElementById('menu-links');
+            menuToggle.addEventListener('click', function () {
+                menuLinks.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
